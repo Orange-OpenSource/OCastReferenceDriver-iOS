@@ -1,0 +1,4 @@
+use_frameworks!
+target 'OCastReferenceDriver_Tests' do
+  pod 'OCastReferenceDriver', :path => '../'
+end
