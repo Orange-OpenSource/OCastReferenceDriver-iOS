@@ -17,7 +17,7 @@ This driver allows the OCast SDK to connect to a remote device that is in confor
 The OCast SDK is available at https://github.com/Orange-OpenSource/OCast-iOS.
                        DESC
 
-s.homepage         = 'https://github.com/Orange-OpenSource/OCast-ReferenceDriver'
+s.homepage         = 'https://github.com/Orange-OpenSource/OCastReferenceDriver-iOS'
 s.license          = { :type => 'Apache V2', :file => 'LICENSE' }
 s.author           = { 'Orange Labs' => 'philippe.besombe@orange.com' }
 s.source           = { :git => 'https://github.com/Orange-OpenSource/OCastReferenceDriver-iOS.git', :tag => s.version.to_s }
@@ -27,4 +27,5 @@ s.source_files = 'OCastReferenceDriver/**/*'
 
 s.dependency 'SocketRocket' , '~>0.5.1'
 s.dependency 'OCast'
+
 end
