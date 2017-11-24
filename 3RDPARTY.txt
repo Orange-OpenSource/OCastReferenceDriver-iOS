@@ -1,0 +1,6 @@
+This project uses the following open source library.
+
+SocketRocket - https://github.com/facebook/SocketRocket
+Copyright 2012 Square Inc.
+Licensed under BSD 3-clause "New" or "Revised" License
+
