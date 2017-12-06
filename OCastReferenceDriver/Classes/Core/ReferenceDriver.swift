@@ -32,7 +32,7 @@ import OCast
 }
 
 /**
- Provides the cavium driver implementation.
+ Provides the Reference driver implementation.
  The driver needs to be registered by the application as shonw below:
 
  ```
