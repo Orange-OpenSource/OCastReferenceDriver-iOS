@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OCastReferenceDriver'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'OCastReferenceDriver provides a reference driver implementation for the OCast SDK.'
 
   s.description      = <<-DESC
@@ -19,7 +19,7 @@ The OCast SDK is available at https://github.com/Orange-OpenSource/OCast-iOS.
 
 s.homepage         = 'https://github.com/Orange-OpenSource/OCastReferenceDriver-iOS'
 s.license          = { :type => 'Apache V2', :file => 'LICENSE' }
-s.author           = { 'Orange Labs' => 'philippe.besombe@orange.com' }
+s.author           = { 'Orange Labs' => ['philippe.besombe@orange.com', 'francois.suc@orange.com', 'christophe.azemar@orange.com'] }
 s.source           = { :git => 'https://github.com/Orange-OpenSource/OCastReferenceDriver-iOS.git', :tag => s.version.to_s }
 
 s.ios.deployment_target = '8.0'

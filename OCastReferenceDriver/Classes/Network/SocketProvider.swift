@@ -75,7 +75,7 @@ final class SocketProvider: NSObject, SRWebSocketDelegate {
     }
 
     func sendMessage(message: String) -> Bool {
-        let payloadSize = message.characters.count
+        let payloadSize = message.count
 
         if payloadSize > maxPayloadSize {
             return false

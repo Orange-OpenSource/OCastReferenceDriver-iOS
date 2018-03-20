@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DF1687CA90ADAFFDC6A0D6AC /* Pods_OcastReferenceDriver_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 815942BBFF5B59F7813FF204 /* Pods_OcastReferenceDriver_Tests.framework */; };
-		EB9B98BA1FBC345E001E836E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB9B98B81FBC345E001E836E /* Info.plist */; };
 		EB9B98BB1FBC345E001E836E /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B98B91FBC345E001E836E /* Tests.swift */; };
 		F83F4C1497F914B22DEA3D99 /* Pods_OCastReferenceDriver_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF58A1D6E5D3E848C2F96833 /* Pods_OCastReferenceDriver_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -129,12 +128,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = MG2LSJNJB6;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -163,7 +161,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB9B98BA1FBC345E001E836E /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,9 +173,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OCastReferenceDriver_Tests/Pods-OCastReferenceDriver_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/OCast/OCast.framework",
+				"${BUILT_PRODUCTS_DIR}/OCastReferenceDriver/OCastReferenceDriver.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCast.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCastReferenceDriver.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -206,13 +212,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCastReferenceDriver_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -332,7 +341,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3191263E605B2FCF98F9AC1F /* Pods-OCastReferenceDriver_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = MG2LSJNJB6;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -354,7 +363,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2BA92E5872E310022C929022 /* Pods-OCastReferenceDriver_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = MG2LSJNJB6;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
