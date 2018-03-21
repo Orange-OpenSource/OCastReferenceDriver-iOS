@@ -18,6 +18,7 @@
 import Foundation
 import OCast
 
+@objcMembers
 final class ReferenceLink: LinkBuildProtocol, SocketProviderProtocol {
 
     // MARK: - Interface

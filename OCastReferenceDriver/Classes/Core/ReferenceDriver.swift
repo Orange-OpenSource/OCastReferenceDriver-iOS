@@ -18,6 +18,7 @@
 import Foundation
 import OCast
 
+@objcMembers
 @objc public final class ReferenceDriverFactory: NSObject, DriverFactoryProtocol {
 
     public static let sharedInstance = ReferenceDriverFactory()
@@ -40,6 +41,7 @@ import OCast
  ```
 
  */
+@objcMembers
 @objc public final class ReferenceDriver: NSObject, DriverProtocol, LinkProtocol {
     public func onFailure(error: NSError?) {
     }
