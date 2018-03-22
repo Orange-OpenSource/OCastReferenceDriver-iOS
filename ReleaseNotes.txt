@@ -1,0 +1,10 @@
+===========================
+Version 0.2.0, March 2018
+===========================
+- migrate to swift 4
+- fix OCast version dependency
+
+===========================
+Version 0.1.0, October 2017
+===========================
+- Initial version
