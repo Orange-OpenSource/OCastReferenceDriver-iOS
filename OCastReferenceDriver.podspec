@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OCastReferenceDriver'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'OCastReferenceDriver provides a reference driver implementation for the OCast SDK.'
 
   s.description      = <<-DESC
