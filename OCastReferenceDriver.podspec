@@ -26,6 +26,6 @@ s.ios.deployment_target = '8.0'
 s.source_files = 'OCastReferenceDriver/**/*'
 
 s.dependency 'SocketRocket' , '~>0.5.1'
-s.dependency 'OCast'
+s.dependency 'OCast', '0.3.0'
 
 end
