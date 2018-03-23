@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OCastReferenceDriver'
-  s.version          = '0.2.1'
+  s.version          = '0.2.1.snapshot'
   s.summary          = 'OCastReferenceDriver provides a reference driver implementation for the OCast SDK.'
 
   s.description      = <<-DESC
@@ -26,6 +26,6 @@ s.ios.deployment_target = '8.0'
 s.source_files = 'OCastReferenceDriver/**/*'
 
 s.dependency 'SocketRocket' , '~>0.5.1'
-s.dependency 'OCast', '0.3.0'
+s.dependency 'OCast'
 
 end
